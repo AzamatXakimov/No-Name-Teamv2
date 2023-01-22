@@ -10,4 +10,18 @@ NavBarCloseBtn.addEventListener("click", () => {
   NavBar.classList.remove("active")
 })
 
-console.log(NavBar);
+const LoginModal = document.querySelector(".js-login-modal");
+const LoginModalOpenBtn = document.querySelector(".js-login-modal-open");
+const LoginModalCloseBtn = document.querySelector(".js-modal-close-btn")
+
+console.log(LoginModal);
+console.log(LoginModalOpenBtn);
+console.log(LoginModalCloseBtn);
+
+LoginModalOpenBtn.addEventListener("click", () => {
+  LoginModal.classList.add("active")
+})
+
+LoginModalCloseBtn.addEventListener("click", () => {
+  LoginModal.classList.remove("active")
+})
