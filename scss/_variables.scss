@@ -1,0 +1,12 @@
+/* VARIABLES */
+$main-font-family: "Open Sans", "Arial", sans-serif;
+$body-bg : #fdfbf8;
+$main-font-weight: 400;
+$main-text-color: #07484a;
+/* ROOT */
+:root{
+    --main-font-family: #{$main-font-family};
+    --main-font-weight: #{$main-font-weight}; 
+    --main-body-bg-color: #{$body-bg};
+    --main-text-color: #{$main-text-color};
+}
