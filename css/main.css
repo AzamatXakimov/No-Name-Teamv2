@@ -1183,6 +1183,202 @@ body {
     display: block;
   }
 }
+.creation {
+  margin-top: 30.9px;
+  margin-bottom: 20px;
+}
+
+.creation__infobox {
+  margin-bottom: 19px;
+  padding-top: 30px;
+  padding-right: 16px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  background-color: #70908b;
+}
+
+.creation__textbox {
+  position: relative;
+  max-width: 320px;
+  width: 100%;
+}
+
+.creation__title {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+  color: #fdfbf8;
+}
+
+.creation__desc {
+  margin-top: 0;
+  margin-bottom: 34px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #fdfbf8;
+}
+
+.creation__text {
+  display: inline-block;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 95.6%;
+  color: #fdfbf8;
+}
+
+.creation_break {
+  display: none;
+}
+
+.creation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.creation__item {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 288px;
+  height: 311px;
+  margin-right: 10px;
+  padding: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.creation__item.creation__item--first {
+  background-image: url("../../images/our-1.png");
+}
+.creation__item.creation__item--second {
+  background-image: url("../../images/our-2.png");
+}
+.creation__item.creation__item--third {
+  background-image: url("../../images/our-3.png");
+}
+.creation__item:hover {
+  -webkit-filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.1));
+}
+.creation__item:hover .creation__link {
+  opacity: 1;
+}
+
+.creation__link {
+  display: inline-block;
+  max-width: 194px;
+  width: 100%;
+  padding: 20px;
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 95.6%;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 6px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+@media only screen and (min-width: 768px) {
+  .creation {
+    margin-top: 200.59px;
+    margin-bottom: 100px;
+  }
+  .creation__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .creation__infobox {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin-right: 20px;
+    margin-bottom: 0;
+    padding-top: 130px;
+    padding-right: 20px;
+    padding-bottom: 141.5px;
+    padding-left: 20px;
+    border-radius: 0px 16px 16px 0px;
+  }
+  .creation__textbox {
+    max-width: 360px;
+  }
+  .creation__title {
+    font-size: 48px;
+    line-height: 120.6%;
+  }
+  .creation_break {
+    display: inline-block;
+  }
+  .creation__desc {
+    margin-bottom: 43.5px;
+    font-size: 24px;
+    line-height: 95.6%;
+  }
+  .creation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+  }
+  .creation__item {
+    width: 382px;
+    height: 537px;
+    margin-right: 26px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .creation {
+    margin-top: 200.5px;
+  }
+  .creation__infobox {
+    margin-right: 32px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .creation {
+    margin-top: 200px;
+  }
+  .creation__infobox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 577px;
+    width: 100%;
+    padding-top: 130px;
+    padding-bottom: 141.5px;
+  }
+}
 .benefits {
   padding: 80px 0px;
   background-color: #e0eff6;
