@@ -458,6 +458,7 @@ body {
   background-image: url("../../images/heroBg-l.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .site-header {
@@ -610,6 +611,7 @@ body {
   background-size: cover;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .site-header__orderbtn {
@@ -622,6 +624,7 @@ body {
   background-size: cover;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .site-header__userbtn {
@@ -634,6 +637,7 @@ body {
   background-size: cover;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
@@ -706,7 +710,7 @@ body {
     line-height: 82px;
   }
 }
-@media only screen and (min-width: 1020px) {
+@media only screen and (min-width: 1200px) {
   .herp-Wrapper {
     background-image: url("../../images/heroBg-d.png");
   }
@@ -1004,6 +1008,9 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  .explore {
+    padding: 100px 0px 310px 0px;
+  }
   .explore-wrapper__title {
     margin-bottom: 36px;
     font-weight: 700;
@@ -1099,6 +1106,9 @@ body {
   }
 }
 @media only screen and (min-width: 1024px) {
+  .explore {
+    padding: 100px 0px 204px 0px;
+  }
   .explore-list {
     width: 956px;
   }
@@ -1119,6 +1129,9 @@ body {
   }
 }
 @media only screen and (min-width: 1200px) {
+  .explore {
+    padding: 267px 0px 204px 0px;
+  }
   .explore-wrapper__box {
     position: relative;
     display: -webkit-box;
@@ -1287,4 +1300,185 @@ body {
     line-height: 33px;
   }
 }
-/* FOOTER START *//*# sourceMappingURL=main.css.map */
+/* FOOTER START */
+.login-modal {
+  position: absolute;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.login-modal.active {
+  display: block;
+}
+
+.login-modal__form {
+  max-width: 966px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  background-color: #fff;
+  border-radius: 40px;
+  -webkit-animation-name: login-modal-animation;
+          animation-name: login-modal-animation;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-transform: translateY(25%);
+      -ms-transform: translateY(25%);
+          transform: translateY(25%);
+}
+
+@-webkit-keyframes login-modal-animation {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
+  }
+}
+
+@keyframes login-modal-animation {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
+  }
+}
+.login-modal__topbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.login-modal__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  color: #000;
+}
+
+.login-modal__closebtn {
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  background-color: #f5f5f5;
+  border-radius: 40px;
+  background-image: url("../../images/close-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.login-modal__input {
+  display: block;
+  width: 100%;
+  padding-left: 128px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000;
+  margin-bottom: 35px;
+  padding-top: 38px;
+  padding-bottom: 39px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  border: 4px solid transparent;
+  background-image: url("../../images/userpassword-icon.svg");
+  background-repeat: no-repeat;
+  background-position: calc(0% + 68px) calc(50% - 0px);
+}
+.login-modal__input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000;
+}
+.login-modal__input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000;
+}
+.login-modal__input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000;
+}
+.login-modal__input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000;
+}
+.login-modal__input::placeholder {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000;
+}
+.login-modal__input.login-modal__input--username {
+  background-image: url("../../images/userlogin-icon.svg");
+}
+.login-modal__input:not(:-moz-placeholder-shown):not(:focus):invalid {
+  border: 4px solid red;
+}
+.login-modal__input:not(:-ms-input-placeholder):not(:focus):invalid {
+  border: 4px solid red;
+}
+.login-modal__input:not(:placeholder-shown):not(:focus):invalid {
+  border: 4px solid red;
+}
+.login-modal__input:not(:-moz-placeholder-shown):not(:focus):invalid ~ .login-modal__invalid {
+  display: inline-block;
+}
+.login-modal__input:not(:-ms-input-placeholder):not(:focus):invalid ~ .login-modal__invalid {
+  display: inline-block;
+}
+.login-modal__input:not(:placeholder-shown):not(:focus):invalid ~ .login-modal__invalid {
+  display: inline-block;
+}
+
+.login-modal__button {
+  display: block;
+  width: 100%;
+  padding: 20px 41px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  background-color: #70908b;
+  border-radius: 30px;
+  color: #fff;
+  border: none;
+}
+
+.login-modal__label {
+  position: relative;
+}
+
+.login-modal__invalid {
+  display: none;
+  position: absolute;
+  font-weight: 700;
+  left: 10px;
+  bottom: -23px;
+  color: red;
+}/*# sourceMappingURL=main.css.map */
