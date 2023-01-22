@@ -1,0 +1,231 @@
+.special {
+    margin-top: 198px;
+}
+.special__title {
+    font-family: 'Playfair Display';
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+    color: #07484A;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+.special__content-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #07484A;
+    margin-top: 0;
+    margin-bottom: 21px;
+}
+.special__content-price {
+    margin-top: 21px;
+    margin-bottom: 32px;
+    display: block;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 115%;
+    letter-spacing: -0.02em;
+    color: #07484A;
+}
+.special__content-btn {
+    margin-bottom: 32px;
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 19px 71px 19px 24px;
+    width: 178px;
+    height: 58px;
+    background: #70908B;
+    border-radius: 10px;
+    color: #FDFBF8;
+    border: none;
+    background-image: url("../../images/korzinaWhite-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 19px 18px;
+    background-position: 81% center;
+}
+.special__content-img img{
+    width: 288px;
+    height: 280px;
+    border-radius: 24px;
+}
+.special__content-img-content{
+    border-bottom: 4px solid #70908B;
+    margin-bottom: 39px;
+}
+.special__content-img-content-title {
+    margin-top: 32px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    color: #07484A;
+    letter-spacing: -0.02em;
+}
+.special__content-img-content-text {
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.02em;
+    color: #07484A;
+}
+.special__content-box {
+    display: none;
+}
+@include mobile-first(768px){
+    .special {
+        margin-top: 200px;
+    }
+    .special__content-wrap{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .special__title {
+        font-size: 72px;
+        line-height: 96px;
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+    .special__content-img img{
+        width: 728px;
+        height: 395px;;
+        border-radius: 24px;
+        margin: 0 auto;
+    }
+    .special__content-img-content{
+        display: none;
+    }
+    .special__content-title {
+        font-size: 36px;
+        line-height: 49px;
+        margin-top: 20px;
+        margin-bottom: 21px;
+    }
+    .special__content-btn {
+        margin-bottom: 32px;
+        display: block;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 13px 71px 13px 24px;
+        width: 178px;
+        height: 58px;
+        background: #70908B;
+        border-radius: 10px;
+        color: #FDFBF8;
+        border: none;
+        background-image: url("../../images/korzinaWhite-icon.svg");
+        background-repeat: no-repeat;
+        background-size: 19px 18px;
+        background-position: 81% center;
+    }
+    .special__content-box {
+        margin-top: 60px;
+        display: flex;
+        padding-bottom: 32px;
+        border-bottom: 4px solid #70908B;
+    }
+    .special__content-box-content {
+        width: 480px;
+        height: 183px;
+        background: #E0F6F1;
+        border-radius: 10px;        
+        margin-left: 16px;
+        padding: 34px 20px ;
+    }
+    .special__content-box-conten-text {
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 24px;
+        font-size: 22px;
+        line-height: 30px;
+        color: #07484A;
+    }
+    .special__content-box-conten-price {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 115%;
+        letter-spacing: -0.02em;
+        color: #07484A;
+    }
+    .special__content-box-conten-link {
+        margin-top: 24px;
+        display: block;
+        font-size: 16px;
+        line-height: 115%;
+        letter-spacing: -0.02em;
+        text-decoration-line: underline;
+        color: #07484A;
+    }
+    .special__content-box-content-box{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@include mobile-first(1024px){
+    .special__title{
+        margin-bottom: 103px;
+    }
+    .special__content-wrap{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .special__content-img img{
+        width: 583px;
+        height: 395px;
+        margin: 0;
+    }
+    .special__content{
+        margin-left: 20px;
+    }
+    .special__content-title{
+        margin-top: 0;
+    }
+    .special__content-box{
+        width: 741px;
+        margin-right: 20px;
+        border: none;
+    }
+    .special__content-blok{
+        display: flex;
+        overflow-x: scroll;
+    }
+}
+@include mobile-first(1500px){
+    .special__content-wrap{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .special__content-wrap-box{
+        display: none;
+    }
+    .special__big-wrap{
+        display: flex;
+    }
+    .special__content-img-content-box{
+        width: 100%;
+        display: block;
+        border: none;
+    }
+    .special__content-img img{
+        width: 822px;
+        height: 556px;
+    }
+    .special__content-box{
+        width: 100%;
+    }
+    .special__content-blok{
+        margin-left: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    .special__content{
+        margin-top: 32px;
+    }
+    .special__content-blok-blok{
+        flex-direction: column;
+        overflow-y: scroll;
+        height: 347px;
+    }
+}
