@@ -86,8 +86,6 @@
           </div>
         </div>
       </section>
-
-      <!-- Main start -->
     </div>
     <main class="site-main">
       <!-- SECTION Explore by Category START -->
@@ -461,6 +459,7 @@
     </footer>
     <!-- Footer finish -->
 
+
     <div class="login-modal">
       <form class="login-modal__form">
         <div class="login-modal__topbox">
@@ -469,6 +468,31 @@
         </div>
         <input c; type="text" />
       </form>
+
+
+    <div class="login-modal js-login-modal">
+        <form class="login-modal__form" method="post" action="https://echo.htmlacademy.ru/" autocomplete="off" >
+            <div class="login-modal__topbox">
+                <h2 class="login-modal__text">
+                    login
+                </h2>
+                <button class="login-modal__closebtn js-modal-close-btn" type="button">
+                    
+                </button>
+            </div>
+            <label class="login-modal__label">
+                <input class="login-modal__input login-modal__input--username" name="user_name" type="text" minlength="2" aria-label="Enter your user name" placeholder="User Name"/>
+                <span class="login-modal__invalid">Invalid value</span>
+            </label>
+            <label class="login-modal__label">
+                <input class="login-modal__input" name="user_password" type="password" minlength="3" aria-label="Enter your password" placeholder="Password"/>
+                <span class="login-modal__invalid">Invalid value</span>
+            </label>
+            <button class="login-modal__button" type="submit">
+                Log in
+            </button>
+        </form>
+
     </div>
 
     <script src="./js/main.js"></script>

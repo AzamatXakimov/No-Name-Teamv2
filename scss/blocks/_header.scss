@@ -3,6 +3,7 @@
     background-image: url("../../images/heroBg-l.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 .site-header{
@@ -42,8 +43,6 @@
     cursor: pointer;
 }
 
-.logo--mobile {
-}
 
 .site-header__navobx {
     position: absolute;
@@ -130,7 +129,8 @@
     background-position: center;
     background-size: cover;
     background-color: transparent;
-    border: none    ;
+    border: none;
+    cursor: pointer;
 }
 .site-header__orderbtn {
     display: inline-block;
@@ -141,7 +141,8 @@
     background-position: center;
     background-size: cover;
     background-color: transparent;
-    border: none    ;
+    border: none;
+    cursor: pointer;
 }
 .site-header__userbtn {
     display: inline-block;
@@ -152,7 +153,8 @@
     background-position: center;
     background-size: cover;
     background-color: transparent;
-    border: none    ;
+    border: none;
+    cursor: pointer;
 }
 
 @include mobile-first(768px){  
@@ -245,7 +247,7 @@
     }
 }
 
-@include mobile-first(1020px){
+@include mobile-first(1200px){
     .herp-Wrapper{
         background-image: url("../../images/heroBg-d.png");
     }

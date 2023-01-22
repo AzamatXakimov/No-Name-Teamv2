@@ -114,6 +114,9 @@
   display: none;
 }
 @include mobile-first(768px) {
+  .explore {
+    padding: 100px 0px 310px 0px;
+  }
   .explore-wrapper__title {
     margin-bottom: 36px;
     font-weight: 700;
@@ -206,6 +209,9 @@
   }
 }
 @include mobile-first(1024px) {
+  .explore {
+    padding: 100px 0px 204px 0px;
+  }
   .explore-list {
     width: 956px;
   }
@@ -226,6 +232,9 @@
   }
 }
 @include mobile-first(1200px) {
+  .explore {
+    padding: 267px 0px 204px 0px;
+  }
   .explore-wrapper__box {
     position: relative;
     display: flex;
