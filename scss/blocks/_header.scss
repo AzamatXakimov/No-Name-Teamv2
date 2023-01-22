@@ -1,4 +1,327 @@
 /* HEADER START */
+.herp-Wrapper{
+    background-image: url("../../images/heroBg-l.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.site-header{
+    position: relative;
+    padding: 26px 0;
+}
+
+.site-heade__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    display: inline-block;
+    margin-right: 36.58px;
+    margin-left: 36.58px;
+}
+
+.logo--tablet {
+    display: none;
+}
+.logo__img {
+    width: 104px;
+    height: 26px;
+}
+
+.site-heade__burger {
+    display: inline-block;
+    width: 24px;
+    height: 18.67px;
+    background-color: transparent;
+    border: none;
+    background-image: url("../../images/hamburg-icon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
 
 
+.site-header__navobx {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh ;
+    padding-top: 29px;
+    padding-bottom: 113px;
+    padding-right: 30px;
+    padding-left: 30px;
+    
+    background-color: #fff;
+    animation-name: slidedown;
+    animation-duration: 1s;
+    
+    &.active{
+        display: block;
+    }
+}
+
+@keyframes slidedown {
+    from {
+        transform: translateY(-100vh);
+    }
+    
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.site-header__burgerclose {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    background-image: url("../../images/close-icon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.site-header__nav {
+    margin-top: 20px;
+}
+
+.site-header__navlist {
+    @include list-rest
+}
+
+.site-header__navitem {
+    &:not(:last-child){
+        margin-bottom: 16px;
+    }
+}
+
+.site-header__navlink {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    color: #000;
+    text-decoration: none;
+}
+
+.site-header__buttonslist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include list-rest
+}
+.site-header__buttonsitem {
+    &:not(:last-child){
+        margin-right: 12px;
+    }
+}
+.site-header__searchbtn {
+    display: inline-block;
+    width: 21.55px;
+    height: 21.54px;
+    background-image: url("../../images/searchWhite-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.site-header__orderbtn {
+    display: inline-block;
+    width: 21.55px;
+    height: 21.54px;
+    background-image: url("../../images/korzinaWhite-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.site-header__userbtn {
+    display: inline-block;
+    width: 20.75px;
+    height: 20.75px;
+    background-image: url("../../images/user-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@include mobile-first(768px){  
+    .logo {
+        margin-right: 36.58px;
+        margin-left: 0;
+    }
+    
+    .logo--tablet {
+        display: inline-block;
+    }
+    .logo__img {
+        width: 144px;
+        height: 36px;
+    }
+    
+    .site-heade__burger {
+        display: inline-block;
+        width: 31px;
+        height: 24.11px;
+        
+    }
+    
+    .site-header__burgerclose {
+        display: block;
+        margin: 0 auto;
+    }
+
+    
+    .logo--mobile {
+        display: none;
+    }
+    
+    .site-header__navobx {
+
+        padding-top: 30px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .site-header__nav{
+        margin-top: 150px;
+    }
+    
+    .site-header__navitem {
+        &:not(:last-child){
+            margin-bottom: 24px;
+        }
+    }
+    
+    .site-header__navlink {
+        font-size: 47px;
+        line-height: 64px;
+    }
+    
+    .site-header__buttonsitem {
+        &:not(:last-child){
+            margin-right: 58px;
+        }
+    }
+    .site-header__searchbtn {
+        display: inline-block;
+        width: 27px;
+        height: 26.99px;
+    }
+
+    .site-header__orderbtn {
+        width: 27px;
+        height: 27px;
+    }
+    .site-header__userbtn {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+@include mobile-first(992px){        
+    .site-header__navobx {
+        padding-right: 70px;
+        padding-left: 70px;
+        padding-bottom: 70px;
+    }
+    
+    .site-header__nav{
+        margin-top: 105px;
+    }
+    
+    .site-header__navlink {
+        font-size: 60px;
+        line-height: 82px;
+    }
+}
+
+@include mobile-first(1200px){
+    .herp-Wrapper{
+        background-image: url("../../images/heroBg-d.png");
+    }
+}
+
+@include mobile-first(1200px){    
+    .site-heade__burger {
+        display: none;
+    }
+    .site-header__navobx {
+        position: relative;
+        display: block;
+        width: auto; 
+        height: auto ;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+        padding-left: 0;
+        
+        background-color: transparent;
+        animation-name: slidedown;
+        animation-duration: 1s;
+        
+        &.active{
+            display: block;
+        }
+    }
+    
+    @keyframes slidedown {
+        from {
+            
+        }
+        
+        to {
+            
+        }
+    }
+    
+    .site-header__burgerclose {
+        display: none;
+    }
+    
+    .site-header__nav {
+        margin-top: 0;
+    }
+    
+    .site-header__navlist {
+        display: flex;
+        align-items: center;
+    }
+    
+    .site-header__navitem {
+        &:not(:last-child){
+            margin-bottom: 0;
+            margin-right: 47px;
+        }
+    }
+    
+    .site-header__navlink {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 132.9%;
+        /* identical to box height, or 27px */
+        
+        letter-spacing: 0.05em;
+        
+        color: #fff;
+
+        &.active{
+            font-weight: 700;
+            border-bottom: 3px solid #fff;
+        }
+    }
+}
 /* HEADER END */
