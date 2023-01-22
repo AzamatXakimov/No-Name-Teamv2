@@ -1,283 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>INWOOD</title>
     <link rel="stylesheet" href="css/main.css" />
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="herp-Wrapper">
-        <!-- Header start -->
-        <header class="site-header">
-            <div class="container">
-                <div class="site-heade__inner">
-                    <a class="logo logo--tablet" href="./index.html">
-                        <img class="logo__img" src="./images/logo-1.svg" alt="Site main logo">
+      <!-- Header start -->
+      <header class="site-header">
+        <div class="container">
+          <div class="site-heade__inner">
+            <a class="logo logo--tablet" href="./index.html">
+              <img
+                class="logo__img"
+                src="./images/logo-1.svg"
+                alt="Site main logo"
+              />
+            </a>
+            <button
+              class="site-heade__burger js-navbar-open-btn"
+              type="button"
+            ></button>
+            <a class="logo logo--mobile" href="./index.html">
+              <img
+                class="logo__img"
+                src="./images/logo-1.svg"
+                alt="Site main logo"
+              />
+            </a>
+
+            <div class="site-header__navobx js-navbar">
+              <button
+                class="site-header__burgerclose js-navbar-close-btn"
+              ></button>
+              <nav class="site-header__nav">
+                <ul class="site-header__navlist">
+                  <li class="site-header__navitem">
+                    <a class="site-header__navlink active" href="./index.html">
+                      Home
                     </a>
-                    <button class="site-heade__burger js-navbar-open-btn" type="button">
-
-                    </button>
-                    <a class="logo logo--mobile" href="./index.html">
-                        <img class="logo__img" src="./images/logo-1.svg" alt="Site main logo">
-                    </a>
-
-                    <div class="site-header__navobx js-navbar">
-                        <button class="site-header__burgerclose js-navbar-close-btn">
-
-                        </button>
-                        <nav class="site-header__nav">
-                            <ul class="site-header__navlist">
-                                <li class="site-header__navitem">
-                                    <a class="site-header__navlink active" href="./index.html">
-                                        Home
-                                    </a>
-                                </li>
-                                <li class="site-header__navitem">
-                                    <a class="site-header__navlink" href="#">
-                                        Products
-                                    </a>
-                                </li>
-                                <li class="site-header__navitem">
-                                    <a class="site-header__navlink" href="#">
-                                        Category
-                                    </a>
-                                </li>
-                                <li class="site-header__navitem">
-                                    <a class="site-header__navlink" href="#">
-                                        About us
-                                    </a>
-                                </li>
-                                <li class="site-header__navitem">
-                                    <a class="site-header__navlink" href="#">
-                                        Contact
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-
-                    <ul class="site-header__buttonslist">
-                        <li class="site-header__buttonsitem">
-                            <button class="site-header__searchbtn" type="button">
-                            
-                            </button>
-                        </li>
-                        <li class="site-header__buttonsitem">
-                            <button class="site-header__orderbtn" type="button">
-    
-                            </button>
-                        </li>
-                        <li class="site-header__buttonsitem">
-                            <button class="site-header__userbtn js-login-modal-open" type="button">
-    
-                            </button>
-                        </li>
-                    </ul>
-                </div>
+                  </li>
+                  <li class="site-header__navitem">
+                    <a class="site-header__navlink" href="#"> Products </a>
+                  </li>
+                  <li class="site-header__navitem">
+                    <a class="site-header__navlink" href="#"> Category </a>
+                  </li>
+                  <li class="site-header__navitem">
+                    <a class="site-header__navlink" href="#"> About us </a>
+                  </li>
+                  <li class="site-header__navitem">
+                    <a class="site-header__navlink" href="#"> Contact </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
-        </header>
-        <!-- Header finish -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero__titlebox">
-                    <h1 class="hero__title">
-                        Exclusive Deals of Furniture Collection
-                    </h1>
-                    <p class="hero__desc">
-                        Explore different categories. Find the best deals.
-                    </p>
-                    <a class="hero__link" href="">Shop Now</a>
-                </div>
-            </div>
-        </section>
-    
-        <!-- Main start -->
+
+            <ul class="site-header__buttonslist">
+              <li class="site-header__buttonsitem">
+                <button class="site-header__searchbtn" type="button"></button>
+              </li>
+              <li class="site-header__buttonsitem">
+                <button class="site-header__orderbtn" type="button"></button>
+              </li>
+              <li class="site-header__buttonsitem">
+                <button class="site-header__userbtn" type="button"></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- Header finish -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__titlebox">
+            <h1 class="hero__title">Exclusive Deals of Furniture Collection</h1>
+            <p class="hero__desc">
+              Explore different categories. Find the best deals.
+            </p>
+            <a class="hero__link" href="">Shop Now</a>
+          </div>
+        </div>
+      </section>
     </div>
     <main class="site-main">
-
-        <!-- SECTION Explore by Category START -->
-        <section class="explore">
-            <div class="container">
-                <div class="explore-wrapper">
-                    <h2 class="explore-wrapper__title" title="">Explore by Category</h2>
-                    <form action="https://echo.htmlacademy.ru/">
-                        <input class="explore-wrapper__search" placeholder="Search" type="search" aria-label="Search" name="search" />
-                    </form>
-                    <div class="explore-wrapper__box">
-                        <ul class="explore-wrapper__list">
-                            <li class="explore-wrapper__item">
-                                <a class="explore-wrapper__link" href="#bedroom">Bedroom</a>
-                            </li>
-                            <li class="explore-wrapper__item">
-                                <a class="explore-wrapper__link" href="#Dining room">Dining room</a>
-                            </li>
-                            <li class="explore-wrapper__item">
-                                <a class="explore-wrapper__link" href="#Meeting room">Meeting room</a>
-                            </li>
-                            <li class="explore-wrapper__item">
-                                <a class="explore-wrapper__link" href="#Kitchen">Kitchen</a>
-                            </li>
-                            <li class="explore-wrapper__item">
-                                <a class="explore-wrapper__link" href="#Living space">Living room</a>
-                            </li>
-                            <li class="explore-wrapper__item">
-                                <a class="explore-wrapper__link" href="#Workspace">Workspace</a>
-                            </li>
-                            <li class="explore-wrapper__item explore-wrapper__item--active">
-                                <a class="explore-wrapper__link" href="#Workspace">Room Kitchen</a>
-                            </li>
-                            <li class="explore-wrapper__item explore-wrapper__item--activ">
-                                <a class="explore-wrapper__link" href="#">Living Space</a>
-                            </li>
-                            <li class="explore-wrapper__item explore-wrapper__item--active">
-                                <a class="explore-wrapper__link" href="#">Living Space</a>
-                            </li>
-                            <li class="explore-wrapper__item explore-wrapper__item--activ">
-                                <a class="explore-wrapper__link" href="#">Living Space</a>
-                            </li>
-                            <li class="explore-wrapper__item explore-wrapper__item--activ">
-                                <a class="explore-wrapper__link" href="#">Living Space</a>
-                            </li>
-                            <li class="explore-wrapper__item explore-wrapper__item--activ">
-                                <a class="explore-wrapper__link" href="#">Living Space</a>
-                            </li>
-                            <li class="explore-wrapper__item explore-wrapper__item--active">
-                                <a class="explore-wrapper__link" href="#">Living Space</a>
-                            </li>
-                        </ul>
-                        <a class="explore-wrapper__all" href="#">All Categories</a>
-                        <ul class="explore-wrapper__explore-list explore-list">
-                            <li class="explore-list__item" id="bedroom">
-                                <img class="explore-list__img" width="288" height="233" src="./images/category-1.png" srcset="
-                                              ./images/category-1.png    1x,
-                                              ./images/category-1@2x.png 2x
-                                            " alt="Bedroom" />
-                            </li>
-                            <li class="explore-list__item" id="Dining room">
-                                <img class="explore-list__img" width="288" height="233" src="./images/category-2.png" srcset="
-                                              ./images/category-2.png    1x,
-                                              ./images/category-2@2x.png 2x
-                                            " alt="Bedroom" />
-                            </li>
-                            <li class="explore-list__item" id="Meeting room">
-                                <img class="explore-list__img" width="288" height="233" src="./images/category-3.png" srcset="
-                                              ./images/category-3.png    1x,
-                                              ./images/category-3@2x.png 2x
-                                            " alt="Bedroom" />
-                            </li>
-                            <li class="explore-list__item" id="Kitchen">
-                                <img class="explore-list__img" width="288" height="233" src="./images/category-4.png" srcset="
-                                              ./images/category-4.png    1x,
-                                              ./images/category-4@2x.png 2x
-                                            " alt="Bedroom" />
-                            </li>
-                            <li class="explore-list__item" id="Living space">
-                                <img class="explore-list__img" width="288" height="233" src="./images/category-5.png" srcset="
-                                              ./images/category-5.png    1x,
-                                              ./images/category-5@2x.png 2x
-                                            " alt="Bedroom" />
-                            </li>
-                            <li class="explore-list__item" id="Workspace">
-                                <img class="explore-list__img" width="288" height="233" src="./images/category-6.png" srcset="
-                                              ./images/category-6.png    1x,
-                                              ./images/category-6@2x.png 2x
-                                            " alt="Bedroom" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <!-- SECTION Explore by Category START -->
+      <section class="explore">
+        <div class="container">
+          <div class="explore-wrapper">
+            <h2 class="explore-wrapper__title" title="">Explore by Category</h2>
+            <form action="https://echo.htmlacademy.ru/">
+              <input
+                class="explore-wrapper__search"
+                placeholder="Search"
+                type="search"
+                aria-label="Search"
+                name="search"
+              />
+            </form>
+            <div class="explore-wrapper__box">
+              <ul class="explore-wrapper__list">
+                <li class="explore-wrapper__item">
+                  <a class="explore-wrapper__link" href="#bedroom">Bedroom</a>
+                </li>
+                <li class="explore-wrapper__item">
+                  <a class="explore-wrapper__link" href="#Dining room"
+                    >Dining room</a
+                  >
+                </li>
+                <li class="explore-wrapper__item">
+                  <a class="explore-wrapper__link" href="#Meeting room"
+                    >Meeting room</a
+                  >
+                </li>
+                <li class="explore-wrapper__item">
+                  <a class="explore-wrapper__link" href="#Kitchen">Kitchen</a>
+                </li>
+                <li class="explore-wrapper__item">
+                  <a class="explore-wrapper__link" href="#Living space"
+                    >Living room</a
+                  >
+                </li>
+                <li class="explore-wrapper__item">
+                  <a class="explore-wrapper__link" href="#Workspace"
+                    >Workspace</a
+                  >
+                </li>
+                <li class="explore-wrapper__item explore-wrapper__item--active">
+                  <a class="explore-wrapper__link" href="#Workspace"
+                    >Room Kitchen</a
+                  >
+                </li>
+                <li class="explore-wrapper__item explore-wrapper__item--activ">
+                  <a class="explore-wrapper__link" href="#">Living Space</a>
+                </li>
+                <li class="explore-wrapper__item explore-wrapper__item--active">
+                  <a class="explore-wrapper__link" href="#">Living Space</a>
+                </li>
+                <li class="explore-wrapper__item explore-wrapper__item--activ">
+                  <a class="explore-wrapper__link" href="#">Living Space</a>
+                </li>
+                <li class="explore-wrapper__item explore-wrapper__item--activ">
+                  <a class="explore-wrapper__link" href="#">Living Space</a>
+                </li>
+                <li class="explore-wrapper__item explore-wrapper__item--activ">
+                  <a class="explore-wrapper__link" href="#">Living Space</a>
+                </li>
+                <li class="explore-wrapper__item explore-wrapper__item--active">
+                  <a class="explore-wrapper__link" href="#">Living Space</a>
+                </li>
+              </ul>
+              <a class="explore-wrapper__all" href="#">All Categories</a>
+              <ul class="explore-wrapper__explore-list explore-list">
+                <li class="explore-list__item" id="bedroom">
+                  <img
+                    class="explore-list__img"
+                    width="288"
+                    height="233"
+                    src="./images/category-1.png"
+                    srcset="
+                      ./images/category-1.png    1x,
+                      ./images/category-1@2x.png 2x
+                    "
+                    alt="Bedroom"
+                  />
+                </li>
+                <li class="explore-list__item" id="Dining room">
+                  <img
+                    class="explore-list__img"
+                    width="288"
+                    height="233"
+                    src="./images/category-2.png"
+                    srcset="
+                      ./images/category-2.png    1x,
+                      ./images/category-2@2x.png 2x
+                    "
+                    alt="Bedroom"
+                  />
+                </li>
+                <li class="explore-list__item" id="Meeting room">
+                  <img
+                    class="explore-list__img"
+                    width="288"
+                    height="233"
+                    src="./images/category-3.png"
+                    srcset="
+                      ./images/category-3.png    1x,
+                      ./images/category-3@2x.png 2x
+                    "
+                    alt="Bedroom"
+                  />
+                </li>
+                <li class="explore-list__item" id="Kitchen">
+                  <img
+                    class="explore-list__img"
+                    width="288"
+                    height="233"
+                    src="./images/category-4.png"
+                    srcset="
+                      ./images/category-4.png    1x,
+                      ./images/category-4@2x.png 2x
+                    "
+                    alt="Bedroom"
+                  />
+                </li>
+                <li class="explore-list__item" id="Living space">
+                  <img
+                    class="explore-list__img"
+                    width="288"
+                    height="233"
+                    src="./images/category-5.png"
+                    srcset="
+                      ./images/category-5.png    1x,
+                      ./images/category-5@2x.png 2x
+                    "
+                    alt="Bedroom"
+                  />
+                </li>
+                <li class="explore-list__item" id="Workspace">
+                  <img
+                    class="explore-list__img"
+                    width="288"
+                    height="233"
+                    src="./images/category-6.png"
+                    srcset="
+                      ./images/category-6.png    1x,
+                      ./images/category-6@2x.png 2x
+                    "
+                    alt="Bedroom"
+                  />
+                </li>
+              </ul>
             </div>
-        </section>
-        <!-- SECTION Explore by Category END -->
+          </div>
+        </div>
+      </section>
+      <!-- SECTION Explore by Category END -->
 
-        <!-- SECTION Popular Products start -->
+      <!-- SECTION Popular Products start -->
 
-        <section class="popular">
-            <div class="container">
+      <section class="popular">
+        <div class="container"></div>
+      </section>
+      <!-- SECTION Popular Products end -->
 
+      <!-- Special Package SECTION START -->
+      <section class="special">
+        <div class="container"></div>
+      </section>
+      <!-- Special Package SECTION END -->
+
+      <!-- Creation section start  -->
+      <section class="creation">
+        <div class="container"></div>
+      </section>
+      <!-- Creation section finish  -->
+
+      <!-- Benefits section start  -->
+      <section class="benefits">
+        <div class="container">
+          <div class="benefits-wrapper">
+            <h2 class="benefits-wrapper__title">
+              Benefits for your expediency
+            </h2>
+            <ul class="benefits-wrapper__list">
+              <li class="benefits-wrapper__item">
+                <h3 class="benefits-wrapper__subtitle">Payment Method</h3>
+                <p class="benefits-wrapper__text">
+                  We offer flexible payment options, to make easier.
+                </p>
+              </li>
+              <li class="benefits-wrapper__item">
+                <h3 class="benefits-wrapper__subtitle">Return policy</h3>
+                <p class="benefits-wrapper__text">
+                  You can return a product within 30 days.
+                </p>
+              </li>
+              <li class="benefits-wrapper__item">
+                <h3 class="benefits-wrapper__subtitle">Customer Support</h3>
+                <p class="benefits-wrapper__text">
+                  Our customer support is 24/7.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Benefits section finish  -->
+
+      <!-- Testimonials section start  -->
+      <section class="testimonials">
+        <div class="container"></div>
+      </section>
+      <!-- Testimonials section finish  -->
+
+      <!--Newsletter section start  -->
+      <article class="join">
+        <div class="join-box">
+          <img
+            class="join-box__img-m"
+            src="./images/join-m.png"
+            srcset="./images/join-m.png 1x, ./images/join-m@2x.png 2x"
+            width="320"
+            height="280"
+            alt="Join Image"
+          />
+          <img
+            class="join-box__img-d"
+            src="./images/join-d.png"
+            srcset="./images/join-d.png 1x, ./images/join-d@2x.png 2x"
+            width="320"
+            height="600"
+            alt="Join Image"
+          />
+          <div class="join-box__join-wrapper join-wrapper">
+            <div class="join-wrapper__title-box">
+              <h2 class="join-wrapper__title">
+                Join Our
+                <span class="join-wrapper__title-span">Newsletter</span>
+              </h2>
             </div>
-        </section>
-        <!-- SECTION Popular Products end -->
-
-
-        <!-- Special Package SECTION START -->
-        <section class="special">
-            <div class="container">
-
-            </div>
-        </section>
-        <!-- Special Package SECTION END -->
-
-        <!-- Creation section start  -->
-        <section class="creation">
-            <div class="container">
-
-            </div>
-        </section>
-        <!-- Creation section finish  -->
-
-        <!-- Benefits section start  -->
-        <section class="benefits">
-            <div class="container">
-                <div class="benefits-wrapper">
-                    <h2 class="benefits-wrapper__title">
-                        Benefits for your expediency
-                    </h2>
-                    <ul class="benefits-wrapper__list">
-                        <li class="benefits-wrapper__item">
-                            <h3 class="benefits-wrapper__subtitle">Payment Method</h3>
-                            <p class="benefits-wrapper__text">
-                                We offer flexible payment options, to make easier.
-                            </p>
-                        </li>
-                        <li class="benefits-wrapper__item">
-                            <h3 class="benefits-wrapper__subtitle">Return policy</h3>
-                            <p class="benefits-wrapper__text">
-                                You can return a product within 30 days.
-                            </p>
-                        </li>
-                        <li class="benefits-wrapper__item">
-                            <h3 class="benefits-wrapper__subtitle">Customer Support</h3>
-                            <p class="benefits-wrapper__text">
-                                Our customer support is 24/7.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- Benefits section finish  -->
-
-        <!-- Testimonials section start  -->
-        <section class="testimonials">
-            <div class="container">
-
-            </div>
-        </section>
-        <!-- Testimonials section finish  -->
-
-        <!--Newsletter section start  -->
-        <article class="join">
-            <div class="container">
-
-            </div>
-        </article>
-        <!-- Testimonials section finish  -->
+            <p class="join-wrapper__text">
+              Receive exclusive deals, discounts and many offers.
+            </p>
+            <form action="https://echo.htmlacademy.ru/">
+              <input
+                class="join-wrapper__input"
+                type="email"
+                placeholder="Enter your email"
+                aria-label="Enter your email"
+              />
+              <button class="join-wrapper__btn" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </article>
+      <!-- Testimonials section finish  -->
     </main>
     <!-- Main finish  -->
 
     <!-- Footer start -->
     <footer class="site-footer">
-        <div class="container">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-wrapper__img-wrap">
+            <a class="footer-wrapper__logo" href="./index.html">
+              <img
+                src="./images/logo-1.svg"
+                width="137"
+                height="36"
+                alt="Site logo"
+              />
+            </a>
+            <ul class="footer-wrapper__list">
+              <li class="footer-wrapper__item">
+                <a target="blank" href="https://www.facebook.com/">
+                  <img
+                    width="27"
+                    height="28"
+                    src="./images/facebook.svg"
+                    alt="Facebook"
+                  />
+                </a>
+              </li>
+              <li class="footer-wrapper__item">
+                <a target="blank" href="https://www.instagram.com/">
+                  <img
+                    width="27"
+                    height="27"
+                    src="./images/instagram.svg"
+                    alt="Instagram"
+                  />
+                </a>
+              </li>
+              <li class="footer-wrapper__item">
+                <a
+                  target="blank"
+                  href="https://www.linkedin.com/home?originalSubdomain=ru"
+                >
+                  <img
+                    width="28"
+                    height="27"
+                    src="./images/linkedin.svg"
+                    alt="Facebook"
+                  />
+                </a>
+              </li>
+              <li class="footer-wrapper__item">
+                <a target="blank" href="https://www.nba.com/">
+                  <img
+                    width="30"
+                    height="30"
+                    src="./images/basketboll.svg"
+                    alt="Facebook"
+                  />
+                </a>
+              </li>
+              <li class="footer-wrapper__item">
+                <a target="blank" href="https://twitter.com/?lang=ru">
+                  <img
+                    width="30"
+                    height="27"
+                    src="./images/twitter.svg"
+                    alt="Facebook"
+                  />
+                </a>
+              </li>
+            </ul>
+            <div class="footer-wrapper__address-box">
+              <strong class="footer-wrapper__address-strong">Address</strong>
+              <address class="footer-wrapper__address">
+                <a class="footer-wrapper__address-link" href="tel:123654987877"
+                  >+123 654 987 877</a
+                >
+                <a class="footer-wrapper__address-link" href="#">The Bronx,</a>
+                <a class="footer-wrapper__address-link" href="#">
+                  NY 14568, USA</a
+                >
+              </address>
+            </div>
+          </div>
 
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <strong class="footer-list__strong">My Account</strong>
+              <a class="footer-list__link" href="#">Sign in </a>
+              <a class="footer-list__link" href="#">Register</a>
+              <a class="footer-list__link" href="#">Order status</a>
+            </li>
+            <li class="footer-list__item">
+              <strong class="footer-list__strong">Help</strong>
+              <a class="footer-list__link" href="#">Shipping </a>
+              <a class="footer-list__link" href="#">Returns</a>
+              <a class="footer-list__link" href="#">Sizing</a>
+            </li>
+            <li class="footer-list__item">
+              <strong class="footer-list__strong">Shop</strong>
+              <a class="footer-list__link" href="#">All Products </a>
+              <a class="footer-list__link" href="#">Bedroom</a>
+              <a class="footer-list__link" href="#">Dinning Room</a>
+            </li>
+            <li class="footer-list__item">
+              <strong class="footer-list__strong">Legal Stuff</strong>
+              <a class="footer-list__link" href="#">Shipping & Delivery </a>
+              <a class="footer-list__link" href="#">Terms & Conditions</a>
+              <a class="footer-list__link" href="#">Privacy & Policy</a>
+            </li>
+          </ul>
+          <span class="footer-wrapper__span"
+            >Copyright ©2020 INWOOD. All Rights Reserved</span
+          >
         </div>
+      </div>
     </footer>
     <!-- Footer finish -->
+
+
+    <div class="login-modal">
+      <form class="login-modal__form">
+        <div class="login-modal__topbox">
+          <h2 class="login-modal__text">login</h2>
+          <button class="login-modal__closebtn js-modal-close-btn"></button>
+        </div>
+        <input c; type="text" />
+      </form>
 
 
     <div class="login-modal js-login-modal">
@@ -302,9 +492,9 @@
                 Log in
             </button>
         </form>
+
     </div>
 
     <script src="./js/main.js"></script>
-</body>
-
+  </body>
 </html>
